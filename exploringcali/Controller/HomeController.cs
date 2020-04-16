@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MVC_BuildingBlocks.Controllers
 {
-    public class HomeController 
+    public class HomeController : Controller
     {
-        public String Index()
+        public IActionResult Index()
         {
-            return "Hello";
+            return View();
         }
     }
 }
